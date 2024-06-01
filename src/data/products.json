@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Camiseta Básica",
+      "description": "Camiseta de algodão de alta qualidade, disponível em várias cores.",
+      "price": 29.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Calça Jeans",
+      "description": "Calça jeans confortável e estilosa, ideal para o dia a dia.",
+      "price": 89.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Tênis Esportivo",
+      "description": "Tênis leve e respirável, perfeito para atividades físicas.",
+      "price": 199.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "Relógio de Pulso",
+      "description": "Relógio digital com diversas funções, resistente à água.",
+      "price": 149.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "name": "Bolsa de Couro",
+      "description": "Bolsa elegante de couro genuíno, com vários compartimentos.",
+      "price": 249.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 6,
+      "name": "Fone de Ouvido",
+      "description": "Fone de ouvido com cancelamento de ruído e alta qualidade de som.",
+      "price": 99.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 7,
+      "name": "Smartphone",
+      "description": "Smartphone de última geração com câmera de alta resolução.",
+      "price": 2999.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 8,
+      "name": "Notebook",
+      "description": "Notebook leve e potente, ideal para trabalho e estudo.",
+      "price": 3999.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 9,
+      "name": "Mochila Escolar",
+      "description": "Mochila resistente e espaçosa, com design ergonômico.",
+      "price": 139.90,
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 10,
+      "name": "Cadeira de Escritório",
+      "description": "Cadeira ergonômica com ajuste de altura e encosto reclinável.",
+      "price": 599.90,
+      "img": "https://via.placeholder.com/150"
+    }
+]
