@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         setSearchTerm={setSearchTerm}
         priceRange={priceRange}
       />
-      <main className="bg-[#F2F2F2]">
+      <main className="bg-[#F2F2F2] h-[100vw]">
         <ProductList priceRange={priceRange} searchTerm={searchTerm} />
       </main>
     </div>

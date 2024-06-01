@@ -11,7 +11,7 @@ interface HeaderProps {
   priceRange: [number, number] | null;
 }
 
-const Header: React.FC<HeaderProps> = ({ onPriceFilter, onClearFilter, setSearchTerm, priceRange }) => {
+const Header: React.FC<HeaderProps> = ({ onPriceFilter, onClearFilter, setSearchTerm, priceRange}) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchTerm, setSearchTermState] = useState<string>("");
 
@@ -19,6 +19,16 @@ const Header: React.FC<HeaderProps> = ({ onPriceFilter, onClearFilter, setSearch
     const value = e.target.value;
     setSearchTermState(value);
     setSearchTerm(value);
+  };
+
+  const handlePriceFilter = (min: number, max: number) => {
+    onPriceFilter(min, max);
+    setIsDropdownOpen(false);
+  };
+
+  const handleClearFilter = () => {
+    onClearFilter();
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -46,23 +56,23 @@ const Header: React.FC<HeaderProps> = ({ onPriceFilter, onClearFilter, setSearch
             <div className="flex flex-col items-center absolute right-0 mt-2 px-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
               <button
                 className={`block w-full text-left px-4 py-2 mt-2 hover:bg-gray-100 ${priceRange && priceRange[0] === 0 && priceRange[1] === 50 ? 'bg-gray-200' : ''}`}
-                onClick={() => onPriceFilter(0, 50)}
+                onClick={() => handlePriceFilter(0, 50)}
               >
                 R$0 - R$ 50
               </button>
               <button
                 className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${priceRange && priceRange[0] === 51 && priceRange[1] === 100 ? 'bg-gray-200' : ''}`}
-                onClick={() => onPriceFilter(51, 100)}
+                onClick={() => handlePriceFilter(51, 100)}
               >
                 R$51 - R$ 100
               </button>
               <button
                 className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${priceRange && priceRange[0] === 101 && priceRange[1] === 200 ? 'bg-gray-200' : ''}`}
-                onClick={() => onPriceFilter(101, 200)}
+                onClick={() => handlePriceFilter(101, 200)}
               >
                 R$101 - R$ 200
               </button>
-              <button onClick={onClearFilter} className="bg-red-500 text-white rounded px-4 py-2 my-2">
+              <button onClick={handleClearFilter} className="bg-red-500 text-white rounded px-4 py-2 my-2">
                 Limpar Filtro
               </button>
             </div>
