@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useCart } from '../context/CartContext';
 import { Link } from "react-router-dom";
 import { GiMoonOrbit } from "react-icons/gi";
 import { IoCartOutline } from "react-icons/io5";
@@ -14,6 +15,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ onPriceFilter, onClearFilter, setSearchTerm, priceRange}) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchTerm, setSearchTermState] = useState<string>("");
+  const { cartItemCount } = useCart();
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -78,7 +80,14 @@ const Header: React.FC<HeaderProps> = ({ onPriceFilter, onClearFilter, setSearch
             </div>
           )}
         </div>
+        <Link to="/cart" className="p-2">
         <IoCartOutline size={40} color="#F2F2F2" />
+        {cartItemCount > 0 && (
+          <span className="absolute top-16 right-5 sm:top-3 sm:right-1 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">
+            {cartItemCount}
+          </span>
+        )}
+        </Link>
       </div>
     </header>
   );

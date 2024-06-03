@@ -3,6 +3,7 @@ import { Product } from '../types/Product';
 import productsData from '../data/products.json';
 import { MdAddShoppingCart } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 interface ProductListProps {
     priceRange: [number, number] | null;
@@ -11,15 +12,11 @@ interface ProductListProps {
 
   const ProductList: React.FC<ProductListProps> = ({ priceRange, searchTerm  }) => {
     const [products, setProducts] = useState<Product[]>([]);
+    const { addToCart } = useCart();
 
     useEffect(() =>{
         setProducts(productsData);
     }, []);
-
-    //TODO
-    const addToCart = (product: Product) => {
-        console.log(`Produto "${product.name}" adicionado ao carrinho.`);
-    };
 
     const filteredProducts = products.filter(product => {
         const matchesPriceRange = priceRange ? product.price >= priceRange[0] && product.price <= priceRange[1] : true;
@@ -36,7 +33,7 @@ return (
           <h2 className="flex justify-center text-xl font-extralight mb-2">{product.name}</h2>
           <p className="flex justify-center text-lg font-semibold mt-2">R$ {product.price.toFixed(2)}</p>
           </Link>
-          <button onClick={() => addToCart(product)} className="flex flex-row items-center gap-2 bg-green-500 text-white px-4 py-2 rounded mt-2">
+          <button onClick={() => addToCart({id: product.id, name: product.name, price: product.price, image: product.img, quantity: 1})} className="flex flex-row items-center gap-2 bg-green-500 text-white px-4 py-2 rounded mt-2">
             <MdAddShoppingCart size={24} color="#F2F2F2" />Adicionar ao carrinho
           </button>
         </div>

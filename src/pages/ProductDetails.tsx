@@ -3,11 +3,13 @@ import { useParams, useNavigate  } from 'react-router-dom';
 import productsData from "../data/products.json";
 import Header from '../components/Header';
 import { IoArrowBack } from "react-icons/io5";
+import { useCart } from '../context/CartContext';
 
 const ProductDetails: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const product = productsData.find((product) => product.id === id);
+    const { addToCart } = useCart();
 
     if (!product) {
         return <div>Produto não encontrado</div>;
@@ -15,6 +17,16 @@ const ProductDetails: React.FC = () => {
 
     const handleBackClick = () => {
         navigate(-1);
+      };
+
+      const handleAddToCart = () => {
+        addToCart({
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          image: product.img,
+          quantity: 1,
+        });
       };
 
     return (
@@ -52,7 +64,7 @@ const ProductDetails: React.FC = () => {
                         </div>
                         <div>
                             <p className="text-xl font-semibold text-gray-700 mb-4">R${product.price}</p>
-                            <button className="bg-green-500 text-white px-4 py-2 rounded">
+                            <button onClick={handleAddToCart} className="bg-green-500 text-white px-4 py-2 rounded">
                                 Adicionar ao Carrinho
                             </button>
                         </div>
