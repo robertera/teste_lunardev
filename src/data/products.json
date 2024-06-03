@@ -5,7 +5,7 @@
     "description": "Camiseta de algodão de alta qualidade, disponível em várias cores.",
     "price": 29.90,
     "color": "Branco",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "description": "Calça jeans confortável e estilosa, ideal para o dia a dia.",
     "price": 89.90,
     "color": "Azul",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1637069585336-827b298fe84a?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "description": "Tênis leve e respirável, perfeito para atividades físicas.",
     "price": 199.90,
     "color": "Preto",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "description": "Relógio digital com diversas funções, resistente à água.",
     "price": 149.90,
     "color": "Prateado",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1684766288396-1fd5c7d92112?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "description": "Bolsa elegante de couro genuíno, com vários compartimentos.",
     "price": 249.90,
     "color": "Marrom",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1624687943971-e86af76d57de?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "6",
@@ -45,7 +45,7 @@
     "description": "Fone de ouvido com cancelamento de ruído e alta qualidade de som.",
     "price": 99.90,
     "color": "Preto",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1563564634211-c82e2019a650?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "description": "Smartphone de última geração com câmera de alta resolução.",
     "price": 2999.90,
     "color": "Cinza",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1605636808063-ba999ff935eb?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "description": "Notebook leve e potente, ideal para trabalho e estudo.",
     "price": 3999.90,
     "color": "Prateado",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1487447054015-16918f0e7999?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "9",
@@ -69,14 +69,14 @@
     "description": "Mochila resistente e espaçosa, com design ergonômico.",
     "price": 139.90,
     "color": "Azul",
-    "img": "https://via.placeholder.com/150"
+    "img": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": "10",
     "name": "Cadeira de Escritório",
     "description": "Cadeira ergonômica com ajuste de altura e encosto reclinável.",
     "price": 599.90,
-    "color": "Preto",
-    "img": "https://via.placeholder.com/150"
+    "color": "Branca",
+    "img": "https://images.unsplash.com/photo-1688578735122-f37256f1b8b0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]

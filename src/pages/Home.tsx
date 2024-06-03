@@ -21,6 +21,7 @@ const Home: React.FC = () => {
         onClearFilter={clearFilter}
         setSearchTerm={setSearchTerm}
         priceRange={priceRange}
+        showFilters={true}
       />
       <main className="bg-[#F2F2F2] h-[100vw]">
         <ProductList priceRange={priceRange} searchTerm={searchTerm} />
